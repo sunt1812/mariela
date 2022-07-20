@@ -1,0 +1,37 @@
+.banner {
+    background-color: var(--primary-color);
+    &__container {
+        width: 70%;
+        position: relative;
+    }
+    .profile {
+        &__info {
+            width: 100%;
+            right: unset;
+            left: 0;
+        }
+        &__image {
+            width: 100%;
+            margin-left: auto;
+            padding-left: 8rem;
+            img {
+                margin-left: 20rem;
+                width: 54rem;
+            }
+        }
+    }
+}
+.banner-order {
+    .profile {
+        &__info {
+            right:-4rem;
+            left: unset;
+        }
+        &__image {
+            margin-left: -2rem;
+            img {
+                margin-left: unset;
+            }
+        }
+    }
+}

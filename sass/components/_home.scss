@@ -1,0 +1,51 @@
+.home {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 56%;
+        background-color:#c9adc6;
+        z-index: -1;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 44%;
+        background-color:#d6bbd3;
+        z-index: -1;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: initial;
+    bottom: 0;
+    width: 5rem;
+    height: 5rem;
+    &:hover,
+    &:hover {
+        opacity: .8;
+    }
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    font-weight: 700;
+}
+.swiper-button-next {
+    right: 2.5rem;
+    background-color:var(--secondary-color);
+    opacity: 0.9;
+}
+.swiper-button-prev {
+    background-color:var(--secondary-color);
+    left: initial;
+    right: 7.5rem;
+}

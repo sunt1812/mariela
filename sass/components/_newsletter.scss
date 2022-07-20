@@ -1,0 +1,43 @@
+.newsletter {
+    &__container {
+        grid-template-columns: .6fr;
+        justify-content: center;
+        text-align: center;
+    }
+    &__title {
+        font-size: var(--p-font-size-small);
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+    &__subscribe {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        input {
+            width: 35%;
+            padding: 2rem;
+            border: 1px solid var(--primary-color);
+            outline: 0;
+            &:focus {
+                border: 1px solid rgb(101, 101, 187);
+            }
+            &::placeholder {
+                color: var(--primary-color);
+                font-size: 1.8rem;
+                font-family: var(--font-family-body);
+                font-style: oblique;
+            }
+        }
+    }
+    &__btn {
+        width: 30%;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        font-size: var(--p-font-size-small);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+    }
+}

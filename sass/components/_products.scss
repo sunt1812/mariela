@@ -1,0 +1,28 @@
+.products {
+    &__container {
+        grid-template-columns: repeat(3,1fr);
+        gap: 4rem;
+    }
+}
+.product-card {
+    text-align: center;
+    &__image {
+        overflow: hidden;
+        cursor: pointer;
+        img {
+            transition: all .4s ease-in;
+        }
+    }
+    &__image:hover img {
+        transform: scale(1.1);
+    }
+    &__title {
+        font-size: var(--h4-font-size);
+        margin: 1rem 0;
+        color: #5f4d5d;
+    }
+    &__price {
+        font-size: 1.6rem;
+        color: #b0b0b0;
+    }
+}

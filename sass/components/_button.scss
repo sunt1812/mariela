@@ -1,0 +1,44 @@
+.btn {
+    display: inline-block;
+    font-size:1.1rem;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-radius: 99rem;
+    padding: 1.5rem 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    height: 45px;
+    min-width: 110px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+    }
+    &-outline {
+        background-color: transparent;
+        border: 1px solid var(--white-color);
+        color: var(--white-color);
+        border-radius: unset;
+        min-width: 21rem;
+        letter-spacing: unset;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        &:hover {
+            background-color: var(--white-color);
+            color: var(--primary-color);
+        }
+    }
+}
+.btn-text {
+    color: var(--white-color);
+    font-size: var(--p-font-size-small);
+    font-weight: 700;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}

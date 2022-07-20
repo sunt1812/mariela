@@ -1,0 +1,30 @@
+.profile {
+    &__image {
+        width: 80%;
+        padding-left: 6rem;
+        img {
+            height: 67.5rem;
+        }
+    }
+    &__info {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 40%;
+        height: 45rem;
+        max-width: 44rem;
+        color: var(--white-color);
+        background-color: #b08ead;
+        padding: 12.4rem 4rem;
+    }
+    &__subtitle {
+        font-size: var(--p-font-size-small);
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    &__title {
+        font-size: var(--h2-font-size);
+        margin: 2rem 0;
+    }
+}

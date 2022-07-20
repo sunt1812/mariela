@@ -1,0 +1,134 @@
+// ===================== responesize tablet =======================
+@media screen and (max-width:1023px) {
+    .nav {
+        &__btns-toggle {
+            display: block;
+            cursor: pointer;
+        }
+        &__menu {
+            position: fixed;
+            top:var(--header-height);
+            left: 0;
+            right: 0;
+            max-height: 0;
+            flex-direction: column;
+            transition: max-height 0.7s ease-in;
+            overflow: hidden;
+            background-color: var(--white-color);
+            z-index: 999;
+            transition: max-height 0.5s ease-in;
+        }
+        &__item,
+        &__link {
+            width: 100%;
+        }
+        &__link {
+            line-height:6rem;
+        }
+        &__menu.show-toggle {
+           max-height: 66rem;
+           transition: max-height 0.3s ease-in;
+        }
+    }
+    .profile {
+        &__info {
+            width: unset;
+            max-width: 37rem;
+        }
+    }
+    .banner {
+        .profile {
+            &__image img {
+                margin-left: 12rem;
+            }
+        }
+    }
+    .banner-order {
+        .profile {
+            &__image img{
+                margin-left: -13rem;
+            }
+        }
+    }
+}
+
+
+// ===================== responesize mobile =======================
+
+@media screen and (max-width:767px) {
+    .about,
+    .products,
+    .porpular,
+    .contact ,
+    .categary {
+        &__container {
+            grid-template-columns: 100%;
+        }
+    }
+    .porpular__info {
+        padding: 0;
+    }
+    .home,
+    .banner {
+        .container {
+            width: 100%;
+        }
+        .profile {
+            &__image {
+                width: 100%;
+                padding-left: unset;
+                margin-left: unset;
+                img {
+                    width: 100%;
+                    margin-left: unset;
+                }
+            }
+            &__info {
+                position: unset;
+                width: 100%;
+                max-width: unset;
+                transform: unset;
+            }
+        }
+    }
+    .newsletter {
+        &__container {
+            grid-template-columns: 100%;
+        }
+        &__subscribe {
+            flex-direction: column;
+            input {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+        &__btn {
+            width: 100%;
+            padding: 2rem;
+        }
+    }
+    .contact {
+        &__container {
+            width: 100%;
+        }
+    }
+    .footer {
+        &__top {
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 5rem;
+        }
+        &__socials {
+            margin-left: unset;
+        }
+    }
+}
+
+@media screen and (max-width:479px) {
+    .footer {
+        &__menu {
+            flex-direction: column;
+            margin-left: unset;
+        }
+    }
+}

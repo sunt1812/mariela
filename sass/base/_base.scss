@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--p-font-size-big);
+    line-height: 1.25;
+    color: var(--txt-color);
+    font-weight: 500;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+h2,
+h4,
+p {
+    font-family: var(--font-family-body);
+}

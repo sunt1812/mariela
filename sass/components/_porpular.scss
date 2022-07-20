@@ -1,0 +1,30 @@
+.porpular {
+    &__container {
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 4rem;
+        &:not(:first-child) {
+            padding-top: 4rem;
+        }
+        &:not(:last-child) {
+            padding-bottom: 4rem;
+            border-bottom: 1px solid var(--primary-color);
+        }
+    }
+    &__info {
+        padding: 0rem 4rem;
+    }
+    &__title {
+        font-size: var(--p-font-size-small);
+        text-transform: uppercase;
+        color: var(--primary-color);
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    &__desc {
+        margin-bottom: 1.5rem;
+    }
+    &__image {
+        border: 1.5rem solid var(--primary-color);
+    }
+}

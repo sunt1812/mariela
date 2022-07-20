@@ -1,0 +1,47 @@
+.header {
+    background-color: var(--white-color);
+    border-top: 4px solid var(--primary-color);
+}
+.nav {
+    height: var(--header-height);
+    @include flex(center,flex-end);
+    &__logo {
+        margin-right: auto;
+        width: 12rem;
+    }
+    &__menu {
+        @include flexCenter(center);
+    }
+    &__link {
+        display: inline-block;
+        padding: 0rem 2.2rem;
+        line-height: var(--header-height);
+        font-size: var(--p-font-size-normal);
+        font-family: var(--font-family-body);
+        color: var(--secondary-color);
+        text-transform: capitalize;
+        border-bottom: 4px solid transparent;
+    }
+    &__link.active {
+        border-bottom: 4px solid var(--primary-color);
+        color: var(--secondary-color);
+    }
+    &__link:hover{
+        border-bottom: 4px solid var(--primary-color);
+    }
+    &__btns {
+        color: var(--primary-color);
+        @include flexCenter(center);
+        gap: 5rem;
+        font-size: 1.7rem;
+        padding: 2rem;
+    }
+    &__btns-cart {
+        width: 2.1rem;
+    }
+    &__btns-toggle {
+        display: none;
+    }
+}
+
+

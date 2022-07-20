@@ -1,0 +1,39 @@
+
+:root {
+    --primary-color:#c9adc6;
+    --primary-color-100:#d6bbd3;
+    --secondary-color: #b08ead;
+    --title-color:#b99bb6;
+    --black-color: #000000;
+    --white-color:#ffffff;
+    --txt-color:#5f4d5d;
+    --bg-color:#FEFDFD;
+    
+    --font-family-body:'Cormorant Garamond', serif;
+    
+      --h1-font-size: 5rem;
+      --h2-font-size: 4.5rem;
+      --h3-font-size: 2.5rem;
+      --h4-font-size: 2.4rem;
+      --h5-font-size: 2rem;
+      --h6-font-size: 1.9rem;
+      --p-font-size-big:2.6rem;
+      --p-font-size-normal:2.4rem;
+      --p-font-size-small: 1.35rem;
+     @media screen and (max-width:988px) {
+        --h1-font-size: 4.5rem;
+        --h2-font-size: 4rem;
+        --h3-font-size: 2.2rem;
+        --h4-font-size: 2rem;
+        --h5-font-size: 1.9rem;
+        --h6-font-size: 1.8rem;
+        --p-font-size-big:2.4rem;
+        --p-font-size-normal:2.2rem;
+        --p-font-size-small: 1.3rem;
+     }
+      
+      --header-height:11rem;
+      --box-shadow: 0px 20px 36px -10px hsl(210, 9%, 87%);
+    }
+    
+    
